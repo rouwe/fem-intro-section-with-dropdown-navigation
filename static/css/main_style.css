@@ -1,0 +1,10 @@
+:root {
+    font-size: 18px;
+    --almost-white: hsl(0, 0%, 98%);
+    --mid-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
+body {
+    font-family: "Epilogue", sans-serif;
+    margin: 0;
+}
