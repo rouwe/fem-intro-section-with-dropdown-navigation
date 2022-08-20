@@ -28,3 +28,25 @@ function changeDisplayMenu() {
     } 
     
 }
+// Navigation dropdown link
+const NAV_DROPDOWN_BOX = document.getElementsByClassName("nav-dropdown-box");
+for (const dropdown of NAV_DROPDOWN_BOX) {
+    dropdown.addEventListener("click", changeDisplaySubLink);
+}
+function changeDisplaySubLink() {
+    // Display or Hide the sub links when clicked
+    const subLink = this.getElementsByClassName("nav-sub-link-box")[0];
+    const subLinkDisplay = subLink.style.display;
+    const arrowUp = this.getElementsByClassName("nav-up-arrow")[0];
+    const arrowDown = this.getElementsByClassName("nav-down-arrow")[0];
+    console.log(subLink, subLinkDisplay)
+    if (subLinkDisplay === '' || subLinkDisplay === "none") {
+        subLink.style.display = "block";
+        arrowUp.style.display = "block";
+        arrowDown.style.display = "none";
+    } else if (subLinkDisplay === 'block'){
+        subLink.style.display = "none";
+        arrowUp.style.display = "none";
+        arrowDown.style.display = "block";
+    }
+}
