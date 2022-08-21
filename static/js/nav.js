@@ -42,11 +42,11 @@ function changeDisplaySubLink() {
     console.log(subLink, subLinkDisplay)
     if (subLinkDisplay === '' || subLinkDisplay === "none") {
         subLink.style.display = "block";
-        arrowUp.style.display = "block";
+        arrowUp.style.display = "flex";
         arrowDown.style.display = "none";
     } else if (subLinkDisplay === 'block'){
         subLink.style.display = "none";
         arrowUp.style.display = "none";
-        arrowDown.style.display = "block";
+        arrowDown.style.display = "flex";
     }
 }
